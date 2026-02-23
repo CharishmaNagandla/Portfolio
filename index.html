@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charishma Nagandla Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">Charishma Nagandla</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Charishma Nagandla</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>                    
+                        <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="home-content">
+                <div class="section_text">
+                    <h1 class="title">Charishma Nagandla</h1>
+                    <h2 class="designation">Data Analyst | Aspiring Data Scientist</h2>
+                    <p class="section_text_p1">Helping businesses make sense of data through insightful analysis.</p>
+                    <div class="btn-container">
+                        <button class="btn-home" onclick="window.open('./assets/CharishmaNagandla_DataAnalyst.pdf')">
+                            Download Resume 
+                        </button>
+                        <button class="btn-home" onclick="location.href='./#contact'">
+                            Contact Info
+                        </button>
+
+                        <a href="https://www.linkedin.com/in/charishma-n-b74a95301" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" />
+                        </a>
+
+                        <a href="https://github.com/CharishmaNagandla" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/github.png" alt="My GitHub Profile" class="icon" />
+                        </a>
+                    </div>                
+                </div>
+                <div class="section_pic_container">
+                    <img src="./assets/pic.jpg" alt="Charishma Nagandla" class="profile-photo">
+                </div>
+            </div>            
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="heading_text">
+                <p class="section_text_p2">Get To Know More</p>
+                <h1 class="section_title">About Me</h1>
+            </div>
+
+            <div class="about-content">
+                <div class="about_pic_container">
+                    <img src="./assets/pic.jpg" alt="Charishma Nagandla" class="about-photo">
+                </div>
+
+                <div class="about_section_text">
+                    <p>
+                        I’m a Data Analyst with 4+ years of experience using data to uncover patterns, improve decision-making, and drive measurable business outcomes. I recently completed my Master’s in Computer Science, where I deepened my skills in analytics, machine learning, and building scalable data solutions.
+                    </p>
+                    <p>
+                        I enjoy breaking down messy problems, collaborating with cross-functional teams, and turning numbers into stories people can actually use. Outside of work, I like exploring new tools, and applying data science to real-world challenges.
+                    </p>
+
+                    <div class="background-cards">
+                        <div class="card exp">
+                            <h2>Experience</h2>
+                            <div class="job-title">
+                                <div class="job-position">
+                                    <strong>Data Analyst – Infosys Limited</strong>
+                                </div>
+                                <div class="job-duration">
+                                    Dec 2018 – Dec 2022
+                                </div>
+                    </div>
+                            <ul class="job-details">
+                                <li>Built and automated Power BI dashboards for banking clients, covering loan performance, risk, and portfolio trends.</li>
+                                <li>Analyzed large financial datasets to deliver actionable insights that supported business and leadership decisions.</li>
+                            </ul>
+                        </div>
+                        <div class="card edu">
+                            <h2>Education</h2>
+                            <ul>
+                                <li>
+                                    <strong>Master of Science in Computer Science</strong><br>
+                                    North Carolina A&T University | May 2025
+                                </li>
+                                <li>
+                                    <strong>Bachelor of Technology in Computer Science Engineering</strong><br>
+                                    Jawaharlal Nehru Technological University | May 2018
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="heading_text">
+                <p class="section_text_p2">See what I can do</p>
+                <h1 class="section_title">Skills</h1>
+            </div>
+
+            <div class="skills-wrapper">
+                <div class="skill-row">
+                    <h4 class="skill-category">Languages & Querying</h4>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>MySQL</span>
+                        <span>Oracle SQL</span>
+                        <span>SQL Server</span>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <h4 class="skill-category">Data Analysis & ML</h4>
+                    <div class="skill-tags">
+                        <span>Statistical Modeling</span>
+                        <span>Anomaly Detection</span>
+                        <span>Cohort Analysis</span>
+                        <span>Classification</span>
+                        <span>Regression</span>
+                        <span>Sentiment Analysis</span>
+                        <span>Predictive Analytics</span>
+                        <span>Risk Assessment</span>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <h4 class="skill-category">Visualization & BI</h4>
+                    <div class="skill-tags">
+                        <span>Power BI</span>
+                        <span>Tableau</span>
+                        <span>Excel Dashboards</span>
+                        <span>KPI Reporting</span>
+                        <span >Financial Reporting</span>
+                        <span>Dashboard Automation</span>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <h4 class="skill-category">Databases & ETL</h4>
+                    <div class="skill-tags">
+                        <span>Snowflake</span>
+                        <span>Data Cleaning</span>
+                        <span>Data Transformation</span>
+                        <span>Reconciliation</span>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <h4 class="skill-category">Tools & Methodologies</h4>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>Jira</span>
+                        <span>MS Office Suite</span>
+                        <span>Postman</span>
+                        <span>Agile Scrum</span>
+                        <span>SDLC</span>
+                    </div>
+                </div>
+            </div>
+       </section> 
+
+       <!-- Project Section -->
+       <section id="projects">
+            <div class="heading_text">
+                <p class="section_text_p2">Browse My Recent</p>
+                <h1 class="section_title">Projects</h1>
+            </div>
+            <div class="projects-grid">
+                <div class="pr_card p1">
+                    <div class="card-flip">
+                        <div class="card-face card-front">
+                            <h3>Superstore Sales Data Analysis</h3>
+                            <p class="one-liner">
+                                Power BI dashboard highlighting sales trends and top-performing products.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span>Power BI</span>
+                                <span>Python</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+
+                        <div class="card-face card-back">
+                            <p class="long-desc">
+                                Cleaned, aggregated, and visualized retail sales data to support inventory and marketing decisions.
+                            </p>
+
+                            <ul class="outcome">
+                                <li>Created interactive drill-down dashboards by region, category, and time period</li>
+                                <li>Improved reporting accuracy with KPI calculations</li>
+                                <li>Supported data-driven inventory and marketing strategies</li>
+                            </ul>
+
+                            <div class="tech-stack detailed">
+                                <span>Power BI</span>
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <!-- <a href="#" target="_blank">Live Demo</a> -->
+                        <a href="https://github.com/CharishmaNagandla" target="_blank">Github</a>
+                    </div>
+                </div>
+                
+                <div class="pr_card p2">
+                    <div class="card-flip">
+                        <div class="card-face card-front">
+                            <h3>IPL Analysis Dashboard</h3>
+                            <p class="one-liner">
+                                Interactive Power BI dashboard analyzing IPL player & team statistics.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span>Power BI</span>
+                                <span>SQL</span>
+                                <span>DAX</span>
+                            </div>
+                        </div>
+
+                        <div class="card-face card-back">
+                            <p class="long-desc">
+                                Automated data transformation and created visuals for player performance, team comparison, and season stats.
+
+                            <ul class="outcome">
+                                <li>Enabled quick performance comparisons across seasons.</li>
+                                <li>Applied Power Query and DAX for data automation.</li>
+                                <li>Created drill-down filters for teams, players, and matches.</li>
+                            </ul>
+
+                            <div class="tech-stack detailed">
+                                <span>Power BI</span>
+                                <span>SQL</span>
+                                <span>DAX</span>
+                                <span>Data Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <!-- <a href="#" target="_blank">Live Demo</a> -->
+                        <a href="https://github.com/CharishmaNagandla/ipl-powerbi-dashboard" target="_blank">Github</a>
+                    </div>
+                </div>
+                <div class="pr_card p3">
+                    <div class="card-flip">
+                        <div class="card-face card-front">
+                            <h3>Amazon Food Reviews Sentiment Analysis</h3>
+                            <p class="one-liner">
+                                NLP-based sentiment analysis on 500k+ customer reviews.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>NLP</span>
+                                <span>Scikit-Learn</span>
+                            </div>
+                        </div>
+
+                        <div class="card-face card-back">
+                            <p class="long-desc">
+                                Built and evaluated multiple machine learning and deep learning models to classify customer sentiment at scale.
+                            </p>
+
+                            <ul class="outcome">
+                                <li>93.9% accuracy, 96.4% F1 score</li>
+                                <li>Processed 500,000+ reviews</li>
+                                <li>Compared Logistic Regression, XGBoost, and LSTM-CNN models</li>
+                            </ul>
+
+                            <div class="tech-stack detailed">
+                                <span>TF-IDF</span>
+                                <span>XGBoost</span>
+                                <span>LSTM</span>
+                                <span>Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <!-- <a href="#" target="_blank">Live Demo</a> -->
+                        <a href="https://github.com/CharishmaNagandla/AmazonFoodReviews" target="_blank">Github</a>
+                    </div>
+                </div>
+
+                <div class="pr_card p4">
+                    <div class="card-flip">
+                        <div class="card-face card-front">
+                            <h3>NFL Player Injury Prediction</h3>
+                            <p class="one-liner">
+                                ML models predicting player injuries using 250k+ historical records.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>ML</span>
+                                <span>Scikit-Learn</span>
+                            </div>
+                        </div>
+
+                        <div class="card-face card-back">
+                            <p class="long-desc">
+                                Developed Random Forest, Neural Network, and XGBoost models to predict injuries and reduce risk of missed games.
+                            </p>
+
+                            <ul class="outcome">
+                                <li>Achieved up to 99.8% prediction accuracy</li>
+                                <li>Handled class imbalance with oversampling techniques</li>
+                                <li>Tuned hyperparameters to optimize recall and F1 score</li>
+                            </ul>
+
+                            <div class="tech-stack detailed">
+                                <span>Random Forest</span>
+                                <span>XGBoost</span>
+                                <span>Neural Networks</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <!-- <a href="#" target="_blank">Live Demo</a> -->
+                        <a href="https://github.com/CharishmaNagandla/nfl_injury_prediction" target="_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="heading_text">
+                <p class="section_text_p2">Get in Touch</p>
+                <h1 class="section_title">Contact Me</h1>
+            </div>
+
+            <div class="contact-mail-page">                
+                <form id="contact-form" class="contact-form">
+                    <input name="name" type="text" placeholder="Your Name" required/>
+                    <input name="email" type="email" placeholder="Your Email" required />
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button class="btn-home" type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-buttons">
+                <div class="contact-button">
+                    <img src="./assets/Mail.png" alt="mail" class="icon1">
+                    <span class="contact-text">nagandla.cn@gmail.com</span>
+                </div>
+
+                <a href="https://www.linkedin.com/in/charishma-n-b74a95301" target="_blank" class="contact-button">
+                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon1"> 
+                    <span class="contact-text">linkedin.com/in/charishma-n</span>
+                </a>
+
+                <a href="https://github.com/CharishmaNagandla" target="_blank" class="contact-button">
+                    <img src="./assets/github.png" alt="Github" class="icon1">
+                    <span class="contact-text">github.com/CharishmaNagandla</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Script for mail -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+    (function(){
+        emailjs.init("XZrF6vVDYQSfGvjR5");
+    })();
+    </script>
+
+    <!-- script for nav hamburger and mail -->
+    <script src="script.js"></script>
+</body>
+</html>
