@@ -24,11 +24,12 @@ form.addEventListener('submit', function(event) {
       });
 });
 
-const projectCards = document.querySelectorAll('.pr_card');
+const flipButtons = document.querySelectorAll('.flip-btn');
 
-projectCards.forEach(card => {
-  card.addEventListener('click', () => {
-    // toggle flipped class
+flipButtons.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    const card = btn.closest('.pr_card');
     card.classList.toggle('flipped');
+    e.stopPropagation(); // prevents accidental parent click events
   });
 });

@@ -193,11 +193,16 @@
 }
 
 @media (hover: none) {
-  .pr_card:hover .card-front {
-    transform: rotateY(0deg);
+  .flip-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    cursor: pointer;
   }
-
-  .pr_card:hover .card-back {
-    transform: rotateY(180deg);
+}
+@media (hover: hover) {
+  .flip-btn {
+    display: none; /* hide on desktop */
   }
 }
