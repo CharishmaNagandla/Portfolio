@@ -618,15 +618,6 @@ section {
   transform: rotateY(0deg);
 }
 
-/* CLICK FLIP (mobile) */
-.pr_card.flipped .card-front {
-  transform: rotateY(-180deg);
-}
-
-.pr_card.flipped .card-back {
-  transform: rotateY(0deg);
-}
-
 /* TEXT STYLES */
 .card-face h3 {
   font-size: 1.6rem;

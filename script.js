@@ -23,13 +23,3 @@ form.addEventListener('submit', function(event) {
           submitButton.disabled = false;
       });
 });
-
-const flipButtons = document.querySelectorAll('.flip-btn');
-
-flipButtons.forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    const card = btn.closest('.pr_card');
-    card.classList.toggle('flipped');
-    e.stopPropagation(); // prevents accidental parent click events
-  });
-});

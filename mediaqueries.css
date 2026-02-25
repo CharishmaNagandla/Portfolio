@@ -191,18 +191,3 @@
         gap: 0.3rem;
     }
 }
-
-@media (hover: none) {
-  .flip-btn {
-    display: inline-block;
-    margin-top: 0.5rem;
-    padding: 0.4rem 0.8rem;
-    font-size: 0.85rem;
-    cursor: pointer;
-  }
-}
-@media (hover: hover) {
-  .flip-btn {
-    display: none; /* hide on desktop */
-  }
-}
