@@ -31,7 +31,7 @@
         text-align: center;
     }
     .about-photo {
-        margin-bottom: 1.25rem;
+        display: none;
     }
 
     .background-cards {
@@ -157,6 +157,11 @@
 }
 
 @media (max-width: 805px){
+    /* About Section */
+    .about-photo {
+        margin-bottom: 1.25rem;
+    }
+
     /* Contact Section */
     .contact-buttons{
         flex-direction: column;
@@ -185,4 +190,14 @@
         flex-wrap: wrap;
         gap: 0.3rem;
     }
+}
+
+@media (hover: none) {
+  .pr_card:hover .card-front {
+    transform: rotateY(0deg);
+  }
+
+  .pr_card:hover .card-back {
+    transform: rotateY(180deg);
+  }
 }

@@ -23,3 +23,13 @@ form.addEventListener('submit', function(event) {
           submitButton.disabled = false;
       });
 });
+
+const cards = document.querySelectorAll('.pr_card');
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    if (window.matchMedia("(hover: none)").matches) {
+      card.classList.toggle('flipped');
+    }
+  });
+});
