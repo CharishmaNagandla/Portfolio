@@ -302,8 +302,8 @@ section {
 .profile-photo{
     width: clamp(14rem, 40vw, 30rem);
     max-width: 90%;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
+    /* aspect-ratio: 1 / 1; */
+    border-radius: 60% / 60%;
     border: 5px solid #ffffff;
     background-color: var(--bg-card);
     box-shadow: 0 4px 15px rgba(90, 62, 43, 0.12);
